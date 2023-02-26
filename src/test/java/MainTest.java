@@ -23,5 +23,45 @@ class MainTest {
         assertEquals(4, Main.calculateAdd(2, 2));
     }
 
+    @Test
+    void fizzBuzzFizz(){
+        //GIVEN
+        FizzBuzz fizzer = new FizzBuzz();
+
+        //WHEN
+        String[] zahlenwort = {"Null","Eins","Zwei","Drei","Vier","Fünf","Sechs","Sieben","Acht","Neun","Zehn"};
+        String result = fizzer.fizzbuzz(3);
+
+        //THEN
+        assertEquals("fizz", result);
+
+    }
+
+    @Test
+    void fizzBuzzBuzz(){
+        //GIVEN
+        FizzBuzz fizzer = new FizzBuzz();
+
+        //WHEN
+        String[] zahlenwort = {"Null","Eins","Zwei","Drei","Vier","Fünf","Sechs","Sieben","Acht","Neun","Zehn"};
+        String result = fizzer.fizzbuzz(5);
+
+        //THEN
+        assertEquals("buzz", result);
+    }
+
+    @Test
+    void fizzBuzzFizzBuzz(){
+        //GIVEN
+        FizzBuzz fizzer = new FizzBuzz();
+
+        //WHEN
+        String[] zahlenwort = {"Null","Eins","Zwei","Drei","Vier","Fünf","Sechs","Sieben","Acht","Neun","Zehn"};
+        String result = fizzer.fizzbuzz(15);
+
+        //THEN
+        assertEquals("fizzbuzz", result);
+    }
+
 
 }
