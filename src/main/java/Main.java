@@ -8,7 +8,6 @@ public static void main(String[] args) {
 
     System.out.println(fizzer.fizzbuzz(8));
 
-
     }
 
     public static int calculateAdd(int i, int i1) {
